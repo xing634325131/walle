@@ -56,8 +56,7 @@ class GradlePlugin implements org.gradle.api.Plugin<Project> {
         }
 
         // check whether APK Signature Scheme v2 is enabled.
-        if (signingConfig.hasProperty("v2SigningEnabled") &&
-                signingConfig.v2SigningEnabled == true) {
+        if (signingConfig.hasProperty("v2SigningEnabled") && signingConfig.v2SigningEnabled) {
             return true;
         }
 

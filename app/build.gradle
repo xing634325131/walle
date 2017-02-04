@@ -6,10 +6,13 @@ buildscript {
     repositories {
         mavenLocal()
         jcenter()
+        maven {
+            url 'http://m.kd.ssj/nexus/content/groups/public'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0'
-        classpath "com.meituan.android.walle:plugin:latest.integration"
+        classpath "com.cardniu.android.walle:plugin:latest.integration"
     }
 }
 
